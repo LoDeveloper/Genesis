@@ -1,0 +1,21 @@
+
+
+.logo img {
+    width: 120px;
+}
+
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      gap: 12px;
+
+      }
+}
