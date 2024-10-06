@@ -1,19 +1,83 @@
 @import 'header';
 @import 'variables';
 @import 'body';
+@import 'footer';
 
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 
-/*main content section*/
 
-.contact-containter {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+/* Main Content Section */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 110px;
+}
+
+.contact-info {
+  max-width: 30%;
+  line-height: 1.5;
+  
+      h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      p {
+        font-size: 16px;
+        color: $pColor;
+      }
+  
+}
+
+.contact-form {
+  display: flex;
+  align-items: flex-end;
+   width: 50%;
+
+      input,
+      textarea {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $secondaryColor;
+        font-size: 16px;
+      }
+      
+      button {
+        background-color: $primaryColor;
+        width: 125px;
+        height: 50px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+
+              &:hover {
+                background-color: #fff;
+                color: $primaryColor;
+                font-weight: bold;
+                border: 2px solid $primaryColor;
+        
+            }
+      }
+}
+
+
+
+/* Map Section */
+.map {
+  margin-top: 120px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
 }
