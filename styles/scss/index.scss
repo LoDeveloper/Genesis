@@ -3,7 +3,11 @@
 @import 'body';
 @import 'footer';
 
-
+@mixin flexSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 * {
     box-sizing: border-box;
@@ -15,9 +19,7 @@
 
 
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSpace();
 
         h5 {
            color: $primaryColor;
@@ -59,9 +61,7 @@
 /* Services section */
 
 .services {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSpace();
     margin-top: 90px;
     margin-bottom: 100px;
 

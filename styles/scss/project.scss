@@ -3,6 +3,12 @@
 @import 'body';
 @import 'footer';
 
+@mixin flexSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 * {
     box-sizing: border-box;
@@ -14,9 +20,7 @@
 /*Project content section*/
 
 .project-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSpace();
     width: 100%;
     margin-bottom: 50px;
 }
