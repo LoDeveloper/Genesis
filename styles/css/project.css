@@ -93,4 +93,78 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/*Project content section*/
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.project-details {
+  width: 50%;
+  text-align: start;
+  line-height: 1.5;
+  color: #111111;
+}
+.project-details h1 {
+  font-size: 40px;
+}
+
+.project-info {
+  border-bottom: 1px solid #111111;
+}
+.project-info table {
+  justify-self: flex-end;
+  width: 100%;
+}
+.project-info th,
+.project-info td {
+  text-align: left;
+  padding: 10px;
+}
+
+/*Gallery section */
+.project-img {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.main-img p {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: "Mulish", sans-serif;
+}
+
+.project-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.project-gallery img {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=project.css.map */
