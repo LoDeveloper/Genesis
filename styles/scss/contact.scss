@@ -1,0 +1,19 @@
+@import 'header';
+@import 'variables';
+@import 'body';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*main content section*/
+
+.contact-containter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
