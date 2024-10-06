@@ -70,7 +70,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  float: left;
   font-size: 18px;
   font-weight: bold;
 }

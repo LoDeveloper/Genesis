@@ -70,7 +70,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  float: left;
   font-size: 18px;
   font-weight: bold;
 }
@@ -102,33 +101,41 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .project-details {
   width: 50%;
-  text-align: start;
   line-height: 1.5;
+  text-align: start;
   color: #111111;
 }
 .project-details h1 {
+  width: 70%;
   font-size: 40px;
 }
 
 .project-info {
-  border-bottom: 1px solid #111111;
+  width: 30%;
 }
 .project-info table {
   justify-self: flex-end;
   width: 100%;
 }
-.project-info th,
 .project-info td {
   text-align: left;
   padding: 10px;
+  border-bottom: 1px solid #111111;
+}
+.project-info th {
+  text-align: left;
+  padding: 10px;
+  color: #979797;
+  font-weight: bold;
 }
 
 /*Gallery section */
@@ -162,6 +169,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  margin-bottom: 130px;
 }
 .project-gallery img {
   width: 100%;
