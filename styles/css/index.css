@@ -77,13 +77,12 @@ body {
   color: #000;
   text-decoration: none;
 }
-.footer .social-icons a {
+.footer i {
   margin-right: 10px;
   float: left;
-}
-.footer .social-icons a img {
-  width: 24px;
-  height: 24px;
+  gap: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 * {
@@ -104,6 +103,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 100px;
 }
 .hero-section h5 {
   color: #4A4FF2;
@@ -772,20 +772,34 @@ body {
 
 /*Awards section */
 .awards {
-  display: block;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-tr {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-tr .table-title {
+
+table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.table-title {
+  text-align: left;
   width: 30%;
   font-size: 22px;
   font-weight: bold;
+}
+
+tr {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 tr .table-award {
   width: 10%;

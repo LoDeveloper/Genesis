@@ -16,7 +16,7 @@
 
 .contact-container {
     display: flex;
-    flex-wrap: wrap; 
+    justify-content: space-between;
     gap: 20px;
   }
   
@@ -38,6 +38,7 @@
   
   .contact-form {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 500px;
@@ -76,7 +77,8 @@
   margin-top: 120px;
 }
 
-.map img {
+iframe {
+  justify-content: center;
   width: 100%;
-  height: auto;
+  height: 50%;
 }

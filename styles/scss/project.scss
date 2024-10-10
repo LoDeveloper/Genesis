@@ -20,7 +20,7 @@
 /*Project content section*/
 
 .project-container {
-    @include flexSpace();
+    @include flexSpace ();
     width: 100%;
     margin-bottom: 50px;
 }
@@ -38,11 +38,10 @@
 }
 
 .project-info {
-
-    width: 30%;
+    width: 40%;
 
         table {
-            justify-self: flex-end;
+            justify-self: flex-start;
             width: 100%;
         }
 
@@ -59,8 +58,6 @@
             color: $secondaryColor;
             font-weight: bold;
         }
-
-
 }
 
 /*Gallery section */
@@ -75,7 +72,7 @@
 .main-img {
 
     img {
-        width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 50px;
     }
@@ -98,6 +95,10 @@
         img {
         width: 100%;
         height: auto;
+        transition: 0.3s;
         }
-    
+
+        img:hover {
+            transform: scale(1.1);
+        }
 }

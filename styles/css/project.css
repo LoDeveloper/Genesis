@@ -77,13 +77,12 @@ body {
   color: #000;
   text-decoration: none;
 }
-.footer .social-icons a {
+.footer i {
   margin-right: 10px;
   float: left;
-}
-.footer .social-icons a img {
-  width: 24px;
-  height: 24px;
+  gap: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 * {
@@ -120,10 +119,10 @@ body {
 }
 
 .project-info {
-  width: 30%;
+  width: 40%;
 }
 .project-info table {
-  justify-self: flex-end;
+  justify-self: flex-start;
   width: 100%;
 }
 .project-info td {
@@ -174,5 +173,11 @@ body {
 .project-gallery img {
   width: 100%;
   height: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.project-gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=project.css.map */
