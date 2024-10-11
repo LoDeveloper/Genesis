@@ -77,12 +77,17 @@ body {
   color: #000;
   text-decoration: none;
 }
+.footer nav ul li a:hover {
+  color: #4A4FF2;
+  text-decoration: underline;
+}
 .footer i {
   margin-right: 10px;
   float: left;
   gap: 20px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 * {
